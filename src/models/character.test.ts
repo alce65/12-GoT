@@ -3,7 +3,7 @@ import { Character } from './character';
 describe('Given the class Character', () => {
     describe('When I instantiate an object  ', () => {
         //  Arrange - Act
-        const p = { ...new Character('', '', 0, 'king') };
+        const p = new Character('', '', 0, 'king');
         test(`Then an object should be created with instance properties: 
             name · family · age · lifeState - message
             and static property series = "GoT"`, () => {

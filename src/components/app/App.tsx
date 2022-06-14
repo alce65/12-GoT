@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from '../../pages/home';
+import { Routes, Route } from 'react-router-dom';
+import { FormPage } from '../../pages/form';
 
 export function App() {
     return (
@@ -47,7 +49,10 @@ export function App() {
                     </a>
                 </span>
             </header>
-            <HomePage></HomePage>
+            <Routes>
+                <Route path="" element={<HomePage />}></Route>
+                <Route path="/form" element={<FormPage />}></Route>
+            </Routes>
         </div>
     );
 }
