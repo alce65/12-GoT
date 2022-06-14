@@ -1,0 +1,11 @@
+main {
+    background-color: #b9540c;
+    overflow: hidden;
+}
+
+.characters-list {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
